@@ -98,7 +98,7 @@ const Profile = () => {
 
       <div className="container py-5">
         <div className="row justify-content-center">
-          <div className="col-lg-6">
+          <div className="col-lg-8" style={{maxWidth: '850px'}}>
             <div className="bg-white rounded-5 shadow-sm border-0 overflow-hidden position-relative">
               
               {/* Premium Header Banner with Custom Image */}
@@ -107,7 +107,8 @@ const Profile = () => {
                   backgroundImage: 'url(/assets/booth/profile_banner.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
-                  minHeight: '220px'
+                  width: '100%',
+                  aspectRatio: '16 / 5'
                 }}>
                 <div className="position-absolute top-0 start-0 w-100 h-100" style={{background: 'rgba(0,0,0,0.1)'}}></div>
                 
@@ -117,12 +118,12 @@ const Profile = () => {
               </div>
 
               {/* Overlapping Avatar */}
-              <div className="text-center" style={{marginTop: '-50px'}}>
+              <div className="text-center" style={{marginTop: '-65px'}}>
                 <img 
                   src="/assets/booth/avatar_view_1.png" 
                   alt="Avatar" 
                   className="rounded-circle border border-5 border-white shadow-lg position-relative z-index-2" 
-                  style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+                  style={{ width: '130px', height: '130px', objectFit: 'cover' }}
                 />
               </div>
 
